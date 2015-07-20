@@ -11,6 +11,7 @@
       - { name: git }
     homebrew_cask_packages:
       - { name: iterm2 }
+      - { name: xtrafinder }
       - { name: google-chrome }
       - { name: google-japanese-ime }
       - { name: bettertouchtool }
