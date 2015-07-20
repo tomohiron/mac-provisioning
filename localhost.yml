@@ -12,6 +12,9 @@
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: google-chrome }
+      - { name: google-japanese-ime }
+      - { name: bettertouchtool }
+      - { name: sublime-text }
       - { name: adobe-reader }
       - { name: java }
       - { name: intellij-idea }
