@@ -9,6 +9,7 @@
     homebrew_packages:
       - { name: ansible }
       - { name: git }
+      - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: xtrafinder }
@@ -59,6 +60,12 @@
     - name: cask パッケージの情報を保存
       shell: brew cask info {{ item }} > cask_info/{{ item }}
       with_items: cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
+
+    # oh-my-zsh
+    - name: oh-my-zsh のインストール
+      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+      args:
+        creates: ~/.oh-my-zsh/
 
     # Ricty
     - name: xquartz のインストール (for Ricty)
