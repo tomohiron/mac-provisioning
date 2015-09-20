@@ -21,6 +21,7 @@
       - { name: java }
       - { name: intellij-idea-ce }
       - { name: nosleep }
+      - { name: libreoffice }
 #      - { name: virtualbox }
 
   tasks:
