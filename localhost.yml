@@ -5,6 +5,7 @@
   vars:
     homebrew_taps:
       - caskroom/cask
+      - caskroom/versions
       - sanemat/font
     homebrew_packages:
       - { name: ansible }
@@ -23,6 +24,7 @@
       - { name: nosleep }
       - { name: libreoffice }
       - { name: dropbox }
+      - { name: macvim-kaoriya }
 #      - { name: virtualbox }
 
   tasks:
