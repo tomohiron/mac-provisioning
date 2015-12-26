@@ -11,6 +11,7 @@
       - { name: ansible }
       - { name: git }
       - { name: zsh, install_options: disable-etcdir }
+      - { name: heroku-toolbelt }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: xtrafinder }
@@ -25,6 +26,7 @@
       - { name: libreoffice }
       - { name: dropbox }
       - { name: macvim-kaoriya }
+      - { name: kindle }
 #      - { name: virtualbox }
 
   tasks:
