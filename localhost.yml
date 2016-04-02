@@ -12,6 +12,8 @@
       - { name: git }
       - { name: zsh, install_options: disable-etcdir }
       - { name: heroku-toolbelt }
+      - { name: maven }
+      - { name: postgresql }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: xtrafinder }
